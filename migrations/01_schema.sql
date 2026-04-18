@@ -14,7 +14,8 @@ CREATE TABLE generation_sessions (
   target_energy FLOAT,
   target_danceability FLOAT,
   is_exported BOOLEAN NOT NULL DEFAULT FALSE,
-  created_at TIMESTAMP NOT NULL DEFAULT NOW()
+  created_at TIMESTAMP NOT NULL DEFAULT NOW(),
+  updated_at TIMESTAMP NOT NULL DEFAULT NOW()
 );
 
 CREATE TABLE session_seed_genres (
