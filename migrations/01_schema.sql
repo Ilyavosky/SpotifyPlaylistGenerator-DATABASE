@@ -64,5 +64,6 @@ CREATE TABLE session_tracks (
   track_id INTEGER NOT NULL REFERENCES tracks(id),
   status track_status NOT NULL DEFAULT 'pending',
   added_at TIMESTAMP NOT NULL DEFAULT NOW(),
+  updated_at TIMESTAMP NOT NULL DEFAULT NOW(),
   UNIQUE (session_id, track_id)
 );
