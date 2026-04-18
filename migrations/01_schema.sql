@@ -44,7 +44,7 @@ CREATE TABLE tracks (
   spotify_id VARCHAR(100) NOT NULL UNIQUE,
   name VARCHAR(255) NOT NULL,
   duration_ms INTEGER,
-  url VARCHAR(255) NOT NULL,
+  uri VARCHAR(255) NOT NULL,
   album_id INTEGER REFERENCES albums(id),
   valence FLOAT,
   energy FLOAT,
