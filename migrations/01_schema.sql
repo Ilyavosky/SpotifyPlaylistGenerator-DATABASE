@@ -19,7 +19,7 @@ CREATE TABLE generation_sessions (
 
 CREATE TABLE session_seed_genres (
   session_id INTEGER NOT NULL REFERENCES generation_sessions(id) ON DELETE CASCADE,
-  genre_id   INTEGER NOT NULL REFERENCES genres(id),
+  genre_id INTEGER NOT NULL REFERENCES genres(id),
   PRIMARY KEY (session_id, genre_id)
 );
 
